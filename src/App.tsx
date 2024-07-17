@@ -1,15 +1,10 @@
-import Alert from "./assets/components/alert";
-interface Props{
-  text: string;
-}
+import Button from "./assets/components/button"
 
-
-function App( {text}:Props) {
+const App = () => {
+  const handleClick = ()=> console.log('Clicked');
   return (
-    <div className="alert alert-primary">
-      <Alert></Alert>
-    </div>
-  );
+    <Button color="primary" text="test" onClick={handleClick}/>
+  )
 }
 
-export default App;
+export default App
